@@ -1,0 +1,101 @@
+h1 {
+	font-family: Montserrat;
+	font-size:   $fontSize22;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight800;
+	line-height: $lineHeight30;
+	color:       $primary;
+	span {
+		font-family: Montserrat;
+		font-size:   $fontSize14;
+		font-style:  $fontStyleNormal;
+		font-weight: $fontWeight300;
+		line-height: $lineHeight16;
+		color:       $primary;
+	}
+}
+h2 {
+	font-family: Montserrat;
+	font-size:   $fontSize30;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight700;
+	line-height: $lineHeight37;
+	color:       $primary;
+}
+h3 {
+	font-family: Montserrat;
+	font-size:   $fontSize20;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight600;
+	line-height: $lineHeight30;
+	color:       $primary;
+	span {
+		font-family: Montserrat;
+		font-size:   $fontSize30;
+		font-style:  $fontStyleNormal;
+		font-weight: $fontWeight800;
+		line-height: $lineHeight37;
+		color:       $fivefold;
+	}
+}
+h4 {
+	font-family: Montserrat;
+	font-size:   $fontSize18;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight700;
+	line-height: $lineHeight30;
+	color:       $primary;
+}
+h5 {
+	font-family: Montserrat;
+	font-size:   $fontSize12;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight400;
+	line-height: $lineHeight15;
+	color:       $primary;
+}
+p {
+	font-family: Montserrat;
+	font-size:   $fontSize14;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight400;
+	line-height: $lineHeight26;
+	color:       $primary;
+}
+li {
+	font-family: Montserrat;
+	font-size:   $fontSize14;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight400;
+	line-height: $lineHeight24;
+	color:       $primary;
+}
+.block12-container__item {
+	span {
+		font-family: Montserrat;
+		font-size:   $fontSize14;
+		font-style:  $fontStyleNormal;
+		font-weight: $fontWeight400;
+		line-height: $lineHeight26;
+		color:       $primary;
+	}
+	b {
+		font-family: Montserrat;
+		font-size:   $fontSize49;
+		font-style:  $fontStyleNormal;
+		font-weight: $fontWeight700;
+		line-height: $lineHeight61;
+		color:       $fivefold;
+		opacity: 		 0.2;
+	}
+}
+form {
+	span {
+		font-family: Montserrat;
+		font-size:   $fontSize18;
+		font-style:  $fontStyleNormal;
+		font-weight: $fontWeight500;
+		line-height: $lineHeight26;
+		color:       $primary;	
+	}
+}	

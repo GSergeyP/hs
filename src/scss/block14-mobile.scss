@@ -1,0 +1,45 @@
+#block14  {
+  position: relative;
+  top: 257px;
+  width: 320px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: $tenfold;
+  #block14-container,
+  #clock,
+  #placeholder {
+    display: none;
+  }
+  #vk {
+    position: relative;
+    top: 24px;
+    left: 57px;
+    width: 23px;
+    height: 23px;
+    fill: $tertiary;
+  }
+  #telegram {
+    position: relative;
+    top: 24px;
+    left: 89px;
+    width: 22px;
+    height: 23px;
+    fill: $tertiary;
+  }
+  #instagram {
+    position: relative;
+    top: 22px;
+    left: 127px;
+    width: 18px;
+    height: 19px;
+    fill: $tertiary;
+  }
+  #whatsapp {
+    position: relative;
+    top: 22px;
+    left: 167px;
+    width: 18px;
+    height: 19px;
+    fill: $tertiary;
+  }
+}

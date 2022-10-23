@@ -1,0 +1,107 @@
+#block11  {
+  width: 1218px;
+  margin: 0 auto;
+  h1 {
+    position: relative;
+    top: 58px;
+    left: 158px;
+    span {
+      position: relative;
+      left: 123px;
+    }
+  }
+  #vk {
+    position: relative;
+    top: 49px;
+    left: 506px;
+    width: 23px;
+    height: 23px;
+    fill: $sixfold;
+  }
+  #telegram {
+    position: relative;
+    top: 49px;
+    left: 538px;
+    width: 22px;
+    height: 23px;
+    fill: $sixfold;
+  }
+  #instagram {
+    position: relative;
+    top: 47px;
+    left: 576px;
+    width: 18px;
+    height: 19px;
+    fill: $sixfold;
+  }
+  #whatsapp {
+    position: relative;
+    top: 47px;
+    left: 616px;
+    width: 18px;
+    height: 19px;
+    fill: $sixfold;
+  }
+  form {
+    position: relative;
+    top: 81px;
+    left: 175px;
+    width: 866px;
+    height: 260px;
+    box-shadow: 0px 4px 50px 0px $primary;
+    span {
+      position: relative;
+      top: 57px;
+      left: 59px;
+      b {
+        color: $sixfold;
+      }
+    }
+    p {
+      position: relative;
+      top: 53px;
+      left: 59px;
+    }
+    input[type=text] {
+      width: 233px;
+      height: 52px;
+      border: solid 1px $seventhfold;
+      border-radius: 4px;
+      outline: none;
+      text-indent: 17px;
+      &::placeholder{
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 22px;
+        color: $eightfold;
+      }
+    }
+    #userName {
+      position: relative;
+      top: 60px;
+      left: 59px;
+    }
+    #userPhone {
+      position: relative;
+      top: 60px;
+      left: 74px;
+    }
+    #userButton {
+      position: relative;
+      top: 60px;
+      left: 87px;
+      width: 240px;
+      height: 56px;
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      background-color: $ninefold;
+      border-radius: 4px;
+      border: none;
+      color: $secondary;
+      cursor: pointer;
+    }
+  }
+}
+

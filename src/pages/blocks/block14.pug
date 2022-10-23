@@ -1,0 +1,18 @@
+block block14 
+  footer#block14
+    div#block14-container
+      mixin article(i, title, ...items)
+          div(class="block14-container__item cell-" + i)
+            h4=title
+            each item, k in items
+              p(class="cell-" + i + "__" + k)!=item
+
+      +article('0', 'КАТАЛОГ', 'Дымоходы', 'Дымососы', 'Печи для дома', 'Печи для бани', 'Камины', 'Силикат кальция', 'Котлы', 'Ещё')
+      
+      +article('1', 'ИНФОРМАЦИЯ', 'Каталог', 'Установка и монтаж', 'Отзывы ', 'Ликвидация товара', 'Полезное', 'Контакты', 'Оплата и доставка')
+      
+      +article('2', 'ВРЕМЯ РАБОТЫ', '<span>пн-пт</span> 9:00 – 20:00   <span>сб-вс</span> 10:00 – 18:00', 'г. Санкт - Петербург ,ул. Тамбасова д.7')
+      
+    each val in ['clock', 'placeholder', 'vk', 'telegram', 'instagram', 'whatsapp'] 
+      svg(id=val)
+        use(xlink:href="svg/icons.svg#" + val)

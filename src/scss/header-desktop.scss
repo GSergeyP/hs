@@ -1,0 +1,153 @@
+#header-container {
+  width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 56px 174px 194px 51px 95px 161px 173px 20px 19px 15px 15px 56px 56px 58px;
+  grid-template-areas: "cell-0 cell-1 cell-9 cell-10 cell-11 cell-12 cell-13 cell-14 cell-2 cell-3 cell-4 cell-5 cell-6 cell-7 cell-8";
+  .cell-0 {
+    img { 
+      position: relative;
+      top: 25px;
+      left: 63px;
+      width: 100px;
+      height: 97px;
+    }
+    grid-area: cell-0; 
+  }  
+  .cell-1 {
+    #burger-menu {
+      position: relative;
+      top: 48px;
+      left: 114px;
+      width: 56px;
+      height: 56px;
+      fill: $secondary;
+    }
+    grid-area: cell-1;
+  }   
+  .cell-2 { 
+    #vk {
+      position: relative;
+      top: 67px;
+      left: 469px;
+      width: 20px;
+      height: 20px;
+      fill: $tertiary;
+    }
+    grid-area: cell-2;
+  }  
+  .cell-3 { 
+    #telegram {
+      position: relative;
+      top: 67px;
+      left: 479px;
+      width: 19px;
+      height: 20px;
+      fill: $tertiary;
+    }
+    grid-area: cell-3;
+  }  
+  .cell-4 {
+    #instagram {
+      position: relative;
+      top: 67px;
+      left: 495px;
+      width: 15px;
+      height: 16px;
+      fill: $tertiary;
+    } 
+    grid-area: cell-4;
+  }   
+  .cell-5 { 
+    #whatsapp {
+      position: relative;
+      top: 67px;
+      left: 513px;
+      width: 15px;
+      height: 16px;
+      fill: $tertiary;
+    } 
+    grid-area: cell-5;
+  }
+  .cell-6 { 
+    #search1 {
+      position: relative;
+      top: 48px;
+      left: 573px;
+      width: 56px;
+      height: 56px;
+      fill: $secondary;
+    } 
+    grid-area: cell-6;
+  }  
+  .cell-7 { 
+    #search2 {
+      position: relative;
+      top: 48px;
+      left: 588px;
+      width: 56px;
+      height: 56px;
+      fill: $secondary;
+    } 
+    grid-area: cell-7;
+  }   
+  .cell-8 { 
+    #cart {
+      position: relative;
+      top: 48px;
+      left: 604px;
+      width: 58px;
+      height: 56px;
+      fill: $secondary;
+    }  
+    grid-area: cell-8;
+  }  
+  .cell-9 { 
+    position: relative;
+    top: 63px;
+    left: 146px;
+    grid-area: cell-9;
+  }   
+  .cell-10 { 
+    position: relative;
+    top: 63px;
+    left: 179px;
+    grid-area: cell-10;
+  }        
+  .cell-11 { 
+    position: relative;
+    top: 63px;
+    left: 214px;
+    grid-area: cell-11;
+  }  
+  .cell-12 { 
+    position: relative;
+    top: 63px;
+    left: 253px;
+    grid-area: cell-12;
+  }   
+  .cell-13 {
+    position: relative;
+    top: 63px;
+    left: 354px;
+    span {
+      position: relative;
+      top: 0;
+      left: 8px;
+      color: $primary;
+    } 
+    grid-area: cell-13;
+  }
+  .cell-14 {
+    position: relative;
+    top: 63px;
+    left: 425px;
+    font-size: 13.5px !important;
+    grid-area: cell-14;
+    b {
+      padding-bottom: 7px;
+      color: $quaternary;
+      border-bottom: dashed 1px $quaternary;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+#block10  {
+  position: relative;
+  top: 84px;
+  width: 738px;
+  margin: 0 auto;
+  span {
+    position: relative;
+    top: -4px;
+  }
+  ul {
+    position: relative;
+    top: -19px;
+    left: 13px; 
+    li {
+      padding-left: 4px; 
+      padding-bottom: 21px;
+    }
+    li::marker {
+      color: $sixfold;
+      font-size: 25px;
+    }
+  }
+  #blob,
+  #group1,
+  #group2,
+  #triangle1,
+  #triangle2,
+  img {
+    display: none;
+  }
+}

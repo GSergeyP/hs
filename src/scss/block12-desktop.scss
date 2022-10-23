@@ -1,0 +1,88 @@
+#block12  {
+  width: 1218px;
+  margin: 0 auto;
+  #block12-container {
+    position: relative;
+    top: 148px;
+    display: grid;
+    grid-template-rows: 200px 100px 100px 100px;
+    grid-template-columns: 509px 509px;
+    grid-column-gap: 115px;
+    grid-template-areas:  "cell-0 ."
+                          "cell-1 cell-4"
+                          "cell-2 cell-5"
+                          "cell-3 cell-6";
+    .cell-0 {
+      #rectangle {
+        width: 74px;
+        height: 5px;
+        fill: $fivefold;
+      }
+      h3 {
+        position: relative;
+        top: -39px;
+      }
+      grid-area: cell-0;
+      grid-area: 1 / 1 / span 1 / span 2;
+    }
+    .cell-1 {
+      span {
+        display: block;
+        position: relative;
+        top: -55px;
+        left: 72px;
+      }
+      grid-area: cell-1;
+    }
+    .cell-2 {
+      span {
+        display: block;
+        position: relative;
+        top: -62px;
+        left: 79px;
+      }
+      grid-area: cell-2;
+    }
+    .cell-3 {
+      span {
+        display: block;
+        position: relative;
+        top: -78px;
+        left: 79px;
+      }
+      grid-area: cell-3; 
+    }
+    .cell-4 {
+      span {
+        display: block;
+        position: relative;
+        top: -53px;
+        left: 69px;
+      }
+      grid-area: cell-4;
+    }
+    .cell-5 {
+      span {
+        display: block;
+        position: relative;
+        top: -69px;
+        left: 76px;
+      }
+      grid-area: cell-5;
+    }
+    .cell-6 {
+      span {
+        display: block;
+        position: relative;
+        top: -64px;
+        left: 76px;
+      }
+      grid-area: cell-6;
+    }
+    .block12-container__item {
+      position: relative;
+      top: -75px;
+    }
+  }
+}
+

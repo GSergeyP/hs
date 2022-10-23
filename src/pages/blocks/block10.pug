@@ -1,0 +1,12 @@
+block block10
+  section#block10
+    h3 Lorem ipsum dolor sit amet <br>
+      span LOREM IPSUM
+    ul
+      each val in ['Доступные цены', 'Собственное производсвто  Дымоходов', 'Выполнение необходимых&nbsp; работ, связанных с установкой камина, печи, котла', 'Гарантия (от трёх до десяти лет)', 'Работаем чисто, аккуратно, убираем за собой, не сквернословим', 'Только русские квалифицированные специалисты', 'Устанавливаем любые дымоходы всех производителей']
+        li!=val
+    each val in ['blob', 'group1', 'group2', 'triangle1', 'triangle2']
+      -val == 'group1' || val == 'group2' ? valTmp = 'group' : val == 'triangle1' || val == 'triangle2' ?  valTmp = 'triangle' :  valTmp = val
+      svg(id=val) 
+        use(xlink:href="svg/icons.svg#"+`${valTmp}`)
+    img(src="img/pipe.png")
