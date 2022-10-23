@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  //Удаление дубликатов
+  const arr = [1, 2, 3, 5, 1, 6, 2, 5, 6, 7],
+        deletingDuplicate = new Set(arr);
+  console.log(deletingDuplicate);
+
+
+  //Объединение двух объектов в один
+  const   obj1 = { id: 1, name: 'userName' },
+          obj2 = { id: 1, password: 'qwerty' },
+          mergingObjects = new Set();
+          mergingObjects.add(obj1);
+          mergingObjects.add(obj2);
+  console.log(mergingObjects);
+
+
+  //Сокращение функции
+  const add = (x, y) => {
+    return x + y
+  }
+  console.log(add(5,4));
+
+  
+  //Функция с задержкой
+  const sleep = (ms) => {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  sleep(5000).then(() => {
+    console.log('Выполнилось через 5 секунд!')
+  })
+</script>
+</body>
+</html>
