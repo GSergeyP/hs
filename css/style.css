@@ -1,0 +1,168 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+@media screen and (min-width: 1440px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 200px 200px 200px;
+    grid-template-areas: "header menu . ." "hero . . ." "main . . image" ". . . extra" "banner . . .";
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase; }
+    #grid #header {
+      background-color: #080224;
+      grid-area: header;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #menu {
+      background-color: #db1414;
+      grid-area: menu;
+      grid-column: 2 / span 3;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #hero {
+      background-color: #2ba9bf;
+      grid-area: hero;
+      grid-column: 1 / span 4;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #main {
+      background-color: #022228;
+      grid-area: main;
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #image {
+      background-color: #91dcae;
+      grid-area: image;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #extra {
+      background-color: #055323;
+      grid-area: extra;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #banner {
+      background-color: #c7eb17;
+      grid-area: banner;
+      grid-column: 1 / span 4;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+@media screen and (min-width: 768px) and (max-width: 1439.9px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 500px 200px 200px;
+    grid-template-areas: "header . . ." "hero . . ." "menu main . ." ". banner . ." ". extra . image";
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase; }
+    #grid #header {
+      background-color: #080224;
+      grid-area: header;
+      grid-column: 1 / span 4;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #menu {
+      background-color: #db1414;
+      grid-area: menu;
+      grid-row: 3 / span 3;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #hero {
+      background-color: #2ba9bf;
+      grid-area: hero;
+      grid-column: 1 / span 4;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #main {
+      background-color: #022228;
+      grid-area: main;
+      grid-column: 2 / span 3;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #image {
+      background-color: #91dcae;
+      grid-area: image;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #extra {
+      background-color: #055323;
+      grid-area: extra;
+      grid-column: 2 / span 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #banner {
+      background-color: #c7eb17;
+      grid-area: banner;
+      grid-column: 2 / span 3;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+@media screen and (max-width: 767.9px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 300px 300px 200px 200px 200px;
+    grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase; }
+    #grid #header {
+      background-color: #080224;
+      grid-area: header;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #menu {
+      background-color: #db1414;
+      grid-area: menu;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #hero {
+      background-color: #2ba9bf;
+      grid-area: hero;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #main {
+      background-color: #022228;
+      grid-area: main;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #image {
+      background-color: #91dcae;
+      grid-area: image;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #extra {
+      background-color: #055323;
+      grid-area: extra;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #grid #banner {
+      background-color: #c7eb17;
+      grid-area: banner;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
