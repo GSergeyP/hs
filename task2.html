@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*function lottery() {
+      console.log('Вы начали игру');
+      let promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+          Math.random(0) > 0.5 ? resolve() : reject("Вы промахнулись")
+        }, 1000);
+      })
+      return promise;
+    }
+    lottery()
+    .then(() => console.log('Вы выйграли'))
+    .then(() => console.log('Вам заплатили'))
+    .catch(() => console.log('Вы проиграли'))
+    .finally(() => console.log('Игра окончина'));*/
+
+    async function lottery() {
+      console.log('Вы начали игру');
+      let promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+          Math.random(0) > 0.5 ? resolve() : reject("Вы промахнулись")
+        }, 1000);
+      })
+      return await promise;
+    }
+    lottery()
+      .then(() => console.log('Вы выйграли'))
+      .then(() => console.log('Вам заплатили'))
+      .catch(() => console.log('Вы проиграли'))
+      .finally(() => console.log('Игра окончина'));
+
+  </script>
+  
+</body>
+</html>

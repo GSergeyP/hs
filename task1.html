@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <input type="text" placeholder="Введите символы" id="charactersEnter">
+    <input type="button" value="Отправить" id="charactersSend">
+  </form>
+  <div id="charactersResult"></div>
+  <script>
+    const $ = document.getElementById.bind(document),
+          charactersSend = $('charactersSend'),
+          charactersEnter = $('charactersEnter'),
+          charactersResult = $('charactersResult');
+
+    charactersSend.addEventListener('click', () => {
+      try {
+        let charactersReceived = charactersEnter.value,
+            charactersСonverted = charactersReceived.replace(/,/g, '.'),
+            regex = /^[-+]?\d+|[-+]?\d+\.\d+$/;
+
+        if(!charactersReceived) throw new Error("Поле не заполнено")
+        else if(isNaN(charactersСonverted) === true) throw new Error("Вводите только цифры");
+        else if(regex.test(charactersСonverted) === false) throw new Error("Вводите только цифры");
+        else if(charactersСonverted < 5) throw new Error("Значение меньше 5")
+        else if(charactersСonverted > 10) throw new Error("Значение больше 10")
+        charactersEnter.value = '';
+        charactersResult.innerHTML = '';
+      }
+      catch(err) {
+        if(err.name === "Error") charactersResult.innerHTML = err.message;
+      }
+    });
+  </script>
+</body>
+</html>
