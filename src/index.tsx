@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './templates/header/header';
 import Footer from './templates/footer/footer';
 import Newsgroup from './templates/newsgroup/newsgroup';
+import News from './templates/news/news';
+import Error from './templates/error/error';
 import './common/scss/global.scss';
 
 
@@ -14,7 +16,12 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <Newsgroup />
+        <Routes>
+          <Route path = '/newsgroup' element = {<Newsgroup />}/>
+          <Route path = '/news/:id' element = {<News />}/>
+          <Route path = '/noLink' element = {<Error />}/>
+          <Route path = '*' element = {<Error />}/>
+        </Routes>
       <Footer />
     </BrowserRouter>
   </React.StrictMode>
