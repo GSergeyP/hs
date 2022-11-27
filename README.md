@@ -8,3 +8,4 @@
 # task7 - React. Основы. Стили.
 # task8 - React. Hooks. Стили.
 # task9 - React. Routing. Стили. 
+# task10 - React. Context. Стили. 
