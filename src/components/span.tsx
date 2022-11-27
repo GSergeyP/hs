@@ -1,6 +1,6 @@
 
-const Div = (props: {
-                divData: Array<{
+const Span = (props: {
+                spanData: Array<{
                                   id?: string,
                                   classes?: string,
                                   title?: string,
@@ -10,15 +10,15 @@ const Div = (props: {
   return(
     <>
       {
-        props.divData.map((content, index) => (
-          <div key = {index} id = {content.id} className = {content.classes}>
+        props.spanData.map((content, index) => (
+          <span key = {index} id = {content.id} className = {content.classes}>
             {content.title}
             {props.children}
-          </div>
+          </span>
         ))
       }
     </>
   )
 }
 
-export default Div;
+export default Span;

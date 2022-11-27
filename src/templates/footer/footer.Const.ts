@@ -1,10 +1,10 @@
-const listingDataUlLeft = [
+const listingDataUl = [
   {
     id: 'footer-left',
   }
 ],
 
-listingDataLiLeft = [
+listingDataLi = [
   {
     classes: 'footer-left__item0',
     title: 'СДАЁМ БАЙ',
@@ -35,6 +35,12 @@ listingDataLiLeft = [
   },
 ];
 
+const divData1 = [
+  {
+    id: 'footer-right',
+  }
+];
+
 const h4Data = [
   {
   id: 'footer-h4',
@@ -42,7 +48,7 @@ const h4Data = [
   }
 ];
 
-const linksData = [
+const linksData1 = [
   {
     classes: 'footer-right__item0',
     title: 'Коттеджи и усадьбы',
@@ -106,20 +112,21 @@ const linksData = [
   {
     classes: 'footer-right__item3',
     title: 'Контакты',
-    url: 'noLink',
+    url: 'contacts',
   },
 ];
 
-const listingDataUlBottom = [
+const divData2 = [
   {
     id: 'footer-bottom',
+    title: 'Мы в соцсетях',
   }
-],
+];
 
-listingDataLiBottom = [
+const linksData2 = [
   {
     classes: 'footer-bottom__item',
-    title: 'Мы в соцсетях',
+    url: 'noLink',
     icons: {
       icon: 'instagram',
       classes: 'footer-bottom__item-svg',
@@ -128,6 +135,7 @@ listingDataLiBottom = [
   },
   {
     classes: 'footer-bottom__item',
+    url: 'noLink',
     icons: {
       icon: 'vk',
       classes: 'footer-bottom__item-svg',
@@ -136,6 +144,7 @@ listingDataLiBottom = [
   },
   {
     classes: 'footer-bottom__item',
+    url: 'noLink',
     icons: {
       icon: 'facebook1',
       classes: 'footer-bottom__item-svg',
@@ -182,5 +191,4 @@ const imgData = [
   },
 ];
 
-
-export { listingDataUlLeft, listingDataLiLeft, h4Data, linksData, listingDataUlBottom, listingDataLiBottom, imgData }
+export { listingDataUl, listingDataLi, divData1, h4Data, linksData1, divData2, linksData2, imgData }
