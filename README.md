@@ -9,3 +9,4 @@
 # task8 - React. Hooks. Стили.
 # task9 - React. Routing. Стили. 
 # task10 - React. Context. Стили. 
+# task11 - React. Redux. React-Hook-Form. Стили. 
