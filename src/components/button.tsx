@@ -1,19 +1,10 @@
 import Icons from './icons';
+import { attributeTags } from './INTERFACE';
 
 const Button = (props: { 
-                  buttonData:  Array <{
-                                        id?: string,
-                                        classes?: string,
-                                        title?: string,
-                                        icons?: {
-                                          icon: string,
-                                          id?: string,
-                                          classes?: string,
-                                          position: string, // Параметр может принять left/right
-                                        }
-                                      }>;
+                  buttonData: attributeTags[];
                   children?: React.ReactNode; 
-                  handleClick?: any;                        ////////////////////////////////////
+                  onClick?: (e: any) => void;                        ////////////////////////////////////
                 }) => {
   return(
     <>
@@ -22,7 +13,7 @@ const Button = (props: {
           <button key = {index} 
                   id = {content.id} 
                   className = {content.classes}
-                  onClick = {(props.handleClick) && props.handleClick}
+                  onClick = {(props.onClick) && props.onClick}
           >
             {
               (content.icons && content.icons.position === 'left') && 

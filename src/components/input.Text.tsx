@@ -1,11 +1,9 @@
+import { attributeTags } from './INTERFACE';
+
 const InputText = (props: { 
-                    inputTextData:  Array <{
-                                            id?: string,
-                                            classes?: string,
-                                            placeholder?: string,
-                                          }>;
+                    inputTextData: attributeTags[];
                     value?: string,
-                    onChange?: any,                        /////////////////////////////////////////
+                    onChange?: (e: any) => void,                        /////////////////////////////////////////
                   }) => {
   return(
     <>

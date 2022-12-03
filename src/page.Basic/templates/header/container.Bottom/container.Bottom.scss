@@ -1,0 +1,79 @@
+@import '../../../../common/scss/variables.scss';
+
+// typography
+.header-bottom__links,
+#header-bottom__button-left {
+	font-family: Inter;
+	font-size:   $fontSize13_7;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight600;
+	line-height: $lineHeight17;
+	color:       $primary;
+	text-decoration: none;
+}
+#header-bottom__button-right {
+	font-family: Inter;
+	font-size:   $fontSize14;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight700;
+	line-height: $lineHeight17;
+	color:       $secondary;
+}
+///////////////////////////////
+.header-bottom {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 20px 40px rgba(135, 124, 202, 0.149);
+}
+.header-bottom__img {
+  position: relative;
+  top: 5px;
+  left: 79px;
+  width: 134px;
+  height: 19px;
+}
+.header-bottom__links {
+  position: relative;
+  top: 0px;
+  left: 403px;
+  margin-right: 81px;
+  padding: 19px 0;
+  &:hover {
+    border-bottom: 4px solid $sixfold;
+  }
+}
+#header-bottom__button-right {
+  position: relative;
+  top: 0px;
+  left: 416px;
+  background: linear-gradient(90deg, $seventhfold 0%, $eightfold 94.5%);
+  width: 224px;
+  height: 37px;
+  border-radius: 19px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(90deg, $ninefold 0%, $tenfold 94.5%);
+  }
+}
+#header-bottom__button-left {
+  position: relative;
+  top: 0px;
+  left: -651px;
+  height: 60px;
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 4px solid $sixfold;
+  }
+  #header-bottom__button-left__svg {
+    position: relative;
+    top: 2px;
+    left: 15px;
+    width: 12.5px;
+    height: 15px;
+    fill: $sixfold;
+  } 
+}

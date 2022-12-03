@@ -1,10 +1,8 @@
+import { attributeTags } from './INTERFACE';
+
 const H4 = (props: { 
-      h4Data:  Array <{
-        id?: string,
-        classes?: string,
-        title: string,
-      }>;
-    }) => {
+              h4Data: attributeTags[];
+            }) => {
     return(
     <>
       {

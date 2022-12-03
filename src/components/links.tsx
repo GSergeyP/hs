@@ -1,19 +1,9 @@
 import { Link } from 'react-router-dom';
 import Icons from './icons';
+import { attributeTags } from './INTERFACE';
 
 const Links = (props: {
-                linksData: Array<{
-                                  id?: string,
-                                  classes?: string,
-                                  title?: string,
-                                  url?: string,   
-                                  icons?:{
-                                    icon: string,
-                                    id?: string,
-                                    classes?: string,
-                                    position: string,     // Параметр может принять left/right 
-                                  }  
-                                }>;
+                linksData: attributeTags[];
                 children?: React.ReactNode;
               }) => {
   return(

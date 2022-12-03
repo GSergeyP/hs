@@ -1,0 +1,88 @@
+@import '../../../../common/scss/variables.scss';
+
+// typography
+.header-top__left,
+.header-top__right {
+	font-family: Inter;
+	font-size:   $fontSize14;
+	font-style:  $fontStyleNormal;
+	font-weight: $fontWeight400;
+	line-height: $lineHeight17;
+	color:       $tertiary;
+  text-decoration: none;
+}
+///////////////////////////////
+.header-top {
+  width: 100%;
+  height: 40px;
+  background-color: $quaternary;
+  overflow: hidden;
+}
+.header-top__left {
+  position: relative;
+  top: 3px;
+  left: 78px;
+  margin-right: 57.5px;
+  padding: 8px 0;
+  &:hover {
+    border-bottom: 4px solid $sixfold;
+  }
+  #header-top__left-svg {
+    width: 9px;
+    height: 10px;
+    fill: $tertiary;
+  }
+}
+.header-top__right {
+  position: relative;
+  top: 3px;
+  left: 305px;
+  margin-right: 52.5px;
+  padding: 8px 0;
+  &:hover {
+    border-bottom: 4px solid $sixfold;
+  }
+  #header-top__right-svg {
+    position: relative;
+    top: 3px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    stroke: $tertiary;
+  }
+}
+.header-top__right {
+  position: relative;
+  top: 3px;
+  left: 306px;
+  height: 37px;
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 4px solid $sixfold;
+  }
+  &.close {
+    color: $primary;
+    font-weight: 500;
+  }
+  &.open {
+    color: $fivefold;
+  }
+}
+#header-top__img {
+  position: relative;
+  top: -7px;
+  left: 24px;
+  margin-right: 33px;
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+#header-top__svg {
+  margin-left: 10px;
+  width: 18px;
+  height: 17.03px;
+  float: right;
+}

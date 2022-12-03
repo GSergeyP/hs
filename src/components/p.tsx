@@ -1,17 +1,8 @@
 import Icons from './icons';
+import { attributeTags } from './INTERFACE';
 
 const P = (props: { 
-            pData:  Array <{
-                            id?: string,
-                            classes?: string,
-                            title: string,
-                            icons?:{
-                              icon: string,
-                              id?: string,
-                              classes?: string,
-                              position: string,     // Параметр может принять left/right 
-                            }
-                          }>;
+            pData: attributeTags[];
             children?: React.ReactNode; 
           }) => {
 return(

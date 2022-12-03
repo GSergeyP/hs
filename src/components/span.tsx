@@ -1,10 +1,7 @@
+import { attributeTags } from './INTERFACE';
 
 const Span = (props: {
-                spanData: Array<{
-                                  id?: string,
-                                  classes?: string,
-                                  title?: string,
-                                }>;
+                spanData: attributeTags[];
                 children?: React.ReactNode;
               }) => {
   return(

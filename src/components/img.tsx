@@ -1,10 +1,7 @@
+import { attributeTags } from './INTERFACE';
+
 const Img = (props: { 
-              imgData: Array<{
-                              src: string,        //require('./../../common/img/logo.png')
-                              id?: string,
-                              classes?: string,
-                              alt: string,
-                            }>; 
+              imgData: attributeTags[]; 
             }) => {
   return(
     <>

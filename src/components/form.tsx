@@ -1,9 +1,8 @@
+import { attributeTags } from './INTERFACE';
+
 const Form = (props: { 
-                formData:  Array <{
-                                    id?: string,
-                                    classes?: string,
-                                  }>;
-                children?: React.ReactNode;  //////////////////////////////////
+                formData: attributeTags[];
+                children?: React.ReactNode; 
               }) => {
   return(
     <>

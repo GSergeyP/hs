@@ -1,12 +1,9 @@
+import { attributeTags } from './INTERFACE';
 
 const Div = (props: {
-                divData: Array<{
-                                  id?: string,
-                                  classes?: string,
-                                  title?: string,
-                                }>;
-                children?: React.ReactNode;
-              }) => {
+              divData: attributeTags[];
+              children?: React.ReactNode;
+            }) => {
   return(
     <>
       {

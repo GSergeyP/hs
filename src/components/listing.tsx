@@ -1,35 +1,18 @@
 import Icons from './icons';
+import { attributeTags } from './INTERFACE';
 
-const Listing = (props: 
-                  {listingDataUl?: Array <{
-                    id?: string;
-                    classes?: string;
-                    title?: string;
-                  }>; 
-                  listingDataLi: Array<{
-                    id?: string,
-                    classes?: string,
-                    title?: number | string,
-                    msg?: string,
-                    handleClick?: any, ///////////////////////////
-                    url?: string,
-                    icons?:{
-                      icon: string,
-                      id?: string,
-                      classes?: string,
-                      position: string, // Параметр может принять left/right
-                    }
-                  }>;
-
+const Listing = (props: {
+                  listingDataUl?: attributeTags[];  
+                  listingDataLi: attributeTags[];
                   children?: React.ReactNode; 
-                  handleClick?: any;    ////////////////////////////////////
+                  onClick?: (e: any) => void;    ////////////////////////////////////
                 }) => {
 
   let li = props.listingDataLi.map((content, index) => (
     <li key = {index} 
         id = {content.id} 
         className = {content.classes}
-        onClick = {(props.handleClick) ? (props.handleClick) : (content.handleClick) && (content.handleClick)}
+        onClick = {(props.onClick) ? (props.onClick) : (content.onClick) && (content.onClick)}
     >
       {
         (content.icons && content.icons.position === 'left') && 

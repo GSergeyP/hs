@@ -1,11 +1,9 @@
+import { attributeTags } from './INTERFACE';
+
 const Label = (props: { 
-                    labelData:  Array <{
-                                        id?: string,
-                                        classes?: string,
-                                        title?: string,
-                                      }>;
-                    children?: React.ReactNode;  //////////////////////////////////                      
-                  }) => {
+                labelData: attributeTags[];
+                children?: React.ReactNode;                   
+              }) => {
   return(
     <>
       {
@@ -13,6 +11,7 @@ const Label = (props: {
           <label key = {index} 
                     id = {content.id} 
                     className = {content.classes}
+                    htmlFor = {content.for}
           >
             {content.title}
             {props.children}

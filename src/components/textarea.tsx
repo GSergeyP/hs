@@ -1,12 +1,9 @@
+import { attributeTags } from './INTERFACE';
+
 const Textarea = (props: { 
-                    textareaData:  Array <{
-                                            id?: string,
-                                            classes?: string,
-                                            value?: any,
-                                            placeholder?: string,
-                                          }>;
+                    textareaData: attributeTags[];
                     children?: React.ReactNode;                      
-                    onChange?: any,                        /////////////////////////////////////////
+                    onChange?: (e: any) => void,                        /////////////////////////////////////////
                   }) => {
   return(
     <>
