@@ -1,34 +1,32 @@
 import { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { pageBasic, pageLogin } from '../../../../redux/pageSlice';
+//import { useDispatch } from 'react-redux';
+//import { pageBasic, pageLogin } from '../../../../redux/pageSlice';
 import Links from '../../../../components/links';
-import Button from '../../../../components/button';
 import Img from '../../../../components/img';
-import { linksData, buttonData } from './container.Top.Const';
-import Icons from '../../../../components/icons';
+import Tags from '../../../../components/tags';
+import { linksData, buttonDataOpen, buttonDataClose } from './container.Top.Const';
 import './container.Top.scss';
 
-const ButtonOpen = (props: any) => {      //////////////////////////////////////
+const ButtonOpen = (props: any) => {                                             ///////////////////////////
   return(
-    <Button buttonData = {buttonData} onClick = {props.onClick} />
+    <Tags type='button' data={buttonDataOpen} onClick={props.onClick} />
   )
 }
 
-const ButtonClose = (props: any) => {     /////////////////////////////////////////////
-  const LOCALSTORAGE: any = localStorage.getItem('sessionID'),
+const ButtonClose = (props: any) => {                                            ///////////////////////////
+  const LOCALSTORAGE: any = localStorage.getItem('sessionID'),                   ///////////////////////////
   data = JSON.parse(LOCALSTORAGE);
   return(
-    <Button buttonData = {[{classes: 'header-top__right close'}]} onClick = {props.onClick}>
-      {(data) && <Img imgData = {[{id: 'header-top__img', src: data[0].url, alt: 'SDAEM.BY'}]} />}
+    <Tags type='button' data={buttonDataClose} onClick={props.onClick}>
+      {(data) && <Img data={[{id: 'header-top__img', src: data[0].url, alt: 'SDAEM.BY'}]} />}
       {(data) && data[0].name}
-      <Icons icon = 'mark' id = 'header-top__svg' />
-    </Button>
+    </Tags>
   )
 }
 
 const ContainerTop = () => {
-  const dispatch = useDispatch(),
-        LOCALSTORAGE: any = localStorage.getItem('sessionID'),   ///////////////////////////////////
+ // const dispatch = useDispatch(),
+   const  LOCALSTORAGE: any = localStorage.getItem('sessionID'),                   ///////////////////////////
         [authorization, setAuthorization] = useState(false);
   
   useEffect(() => {
@@ -36,24 +34,21 @@ const ContainerTop = () => {
   }, [LOCALSTORAGE])
 
   const buttonClose = () => {
-    dispatch(pageBasic());
+    //dispatch(pageBasic());
     setAuthorization(false);
   }
 
   const buttonOpen = () => {
-    dispatch(pageLogin());
+   // dispatch(pageLogin());
     setAuthorization(true);
   }
   
   return(
-    <article className = 'header-top'>
-      <Links linksData = {linksData} />
-      {(authorization) ? <ButtonClose onClick ={buttonClose}/> : <ButtonOpen onClick ={buttonOpen}/>}
+    <article className='header-top'>
+      <Links data={linksData} />
+      {(authorization) ? <ButtonClose onClick={buttonClose}/> : <ButtonOpen onClick={buttonOpen}/>}
     </article>
   )
 }
 
 export default ContainerTop;
-
-
-

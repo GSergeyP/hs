@@ -1,13 +1,18 @@
-import { attributeTags } from './INTERFACE';
+import { memo } from 'react';
+
+export interface attributeTags {
+  id?: string,
+  classes?: string,
+}
 
 const Form = (props: { 
-                formData: attributeTags[];
+                data: attributeTags[];
                 children?: React.ReactNode; 
               }) => {
   return(
     <>
       {
-        props.formData.map((content, index) => (
+        props.data.map((content, index) => (
           <form key = {index} 
                 id = {content.id} 
                 className = {content.classes}
@@ -20,4 +25,4 @@ const Form = (props: {
   )
 }
 
-export default Form;
+export default memo(Form);

@@ -1,17 +1,18 @@
 import Img from '../../../../components/img';
 import Links from '../../../../components/links';
-import Button from '../../../../components/button';
+import Tags from '../../../../components/tags';
 import { imgData, linksData, buttonData } from './container.Bottom.Const';
-import ModalEvent from './modal/modal.Event';
+//import ContainerModal from './container.Modal/container.Modal';
+
 import './container.Bottom.scss';
 
 const ContainerBottom = () => {
   return(
-    <article className = 'header-bottom'>
-      <Img imgData = {imgData} />
-      <Links linksData = {linksData} />
-      <Button buttonData = {buttonData} />
-      <ModalEvent />
+    <article className='header-bottom'>
+      <Img data={imgData} />
+      <Links data={linksData} />
+      <Tags type='button' data={buttonData} />
+      {/*<ContainerModal />*/}
     </article>
   )
 }

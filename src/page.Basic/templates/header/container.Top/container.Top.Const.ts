@@ -2,7 +2,7 @@ const linksData = [
   {
     classes: 'header-top__left',
     title: 'Главная',
-    url: 'noLink',
+    url: '',
   },
   {
     classes: 'header-top__left',
@@ -41,11 +41,22 @@ const linksData = [
   }
 ];
 
-const buttonData = [
+const buttonDataOpen = [
   {
     classes: 'header-top__right open',
     title: 'Вход и регистрация',
   }
 ];
 
-export { linksData, buttonData };
+const buttonDataClose = [
+  {
+    classes: 'header-top__right close',
+    icons:{
+      icon: 'mark', 
+      id: 'header-top__svg',
+      position: 'right',
+    }
+  }
+];
+
+export { linksData, buttonDataOpen, buttonDataClose };

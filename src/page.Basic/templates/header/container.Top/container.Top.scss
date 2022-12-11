@@ -36,25 +36,9 @@
 .header-top__right {
   position: relative;
   top: 3px;
-  left: 305px;
-  margin-right: 52.5px;
-  padding: 8px 0;
-  &:hover {
-    border-bottom: 4px solid $sixfold;
-  }
-  #header-top__right-svg {
-    position: relative;
-    top: 3px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    stroke: $tertiary;
-  }
-}
-.header-top__right {
-  position: relative;
-  top: 3px;
   left: 306px;
+  margin-right: 44.5px;
+  padding: 8px 7px 8px 0;
   height: 37px;
   background: none;
   border: none;
@@ -69,6 +53,14 @@
   }
   &.open {
     color: $fivefold;
+  }
+  #header-top__right-svg {
+    position: relative;
+    top: 3px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    stroke: $tertiary;
   }
 }
 #header-top__img {
@@ -85,4 +77,5 @@
   width: 18px;
   height: 17.03px;
   float: right;
+  stroke: $fivefold;
 }

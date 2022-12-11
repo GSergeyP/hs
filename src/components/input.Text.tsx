@@ -1,14 +1,20 @@
-import { attributeTags } from './INTERFACE';
+import { memo } from 'react';
+
+export interface attributeTags {
+  id?: string,
+  classes?: string,
+  placeholder?: string,
+}
 
 const InputText = (props: { 
-                    inputTextData: attributeTags[];
+                    data: attributeTags[];
                     value?: string,
                     onChange?: (e: any) => void,                        /////////////////////////////////////////
                   }) => {
   return(
     <>
       {
-        props.inputTextData.map((content, index) => (  
+        props.data.map((content, index) => (  
           <input  type = 'text'
                   autoComplete = 'off'
                   key = {index} 
@@ -24,4 +30,4 @@ const InputText = (props: {
   )
 }
 
-export default InputText;
+export default memo(InputText);

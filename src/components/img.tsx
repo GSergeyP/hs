@@ -1,12 +1,20 @@
-import { attributeTags } from './INTERFACE';
+import { memo } from 'react';
+
+
+export interface attributeTags {
+  id?: string,
+  classes?: string,
+  src?: string,             
+  alt?: string,            
+}
 
 const Img = (props: { 
-              imgData: attributeTags[]; 
+              data: attributeTags[]; 
             }) => {
   return(
     <>
       {
-        props.imgData.map((content, index) => (
+        props.data.map((content, index) => (
           <img key = {index} 
               id = {content.id} 
               className = {content.classes}
@@ -19,4 +27,4 @@ const Img = (props: {
   )
 }
 
-export default Img;
+export default memo(Img);

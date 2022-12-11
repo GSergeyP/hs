@@ -1,7 +1,8 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './templates/header/header';
 import Footer from './templates/footer/footer';
-import Contacts from './templates/contacts/contacts';
+import Newsgroup from './templates/newsgroup/newsgroup';
+
 
 const App = () => {
   return(
@@ -9,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <main>
-        <Contacts />
+        <Newsgroup />
       </main>
       <Footer />
     </BrowserRouter>

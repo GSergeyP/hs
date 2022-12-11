@@ -1,19 +1,41 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 import Icons from './icons';
-import { attributeTags } from './INTERFACE';
+
+type optionPosition = 'left' | 'right';
+
+export interface icons {
+  icon: string,
+  id?: string,
+  classes?: string,
+  position: optionPosition, 
+  [key: string]: any;              ////////////////////////////////////     
+}
+
+export interface attributeTags {
+  id?: string,
+  classes?: string,
+  title?: string,
+  url?: string,             
+  icons?: icons,
+  [key: string]: any;              ////////////////////////////////////  
+}
 
 const Links = (props: {
-                linksData: attributeTags[];
+                data: attributeTags;
+                active?: string,
                 children?: React.ReactNode;
+                onClick?: (e: any) => void;     ////////////////////////////////////
               }) => {
   return(
     <>
       {
-        props.linksData.map((content, index) => (
-          <Link key = {index} 
-                to = {`/${content.url}`} 
-                id = {content.id}
-                className = {content.classes}
+        props.data.map((content: attributeTags, index: number) => (
+          <Link key={index + Object.values(content)[0] + content.url} 
+                to={`/${content.url}`} 
+                id={content.id}
+                className={(props.active && content.classes === props.active) ? (content.classes + ' active') : content.classes }
+                onClick={props.onClick}
           >
             {
             (content.icons && content.icons.position === 'left') && 
@@ -32,4 +54,6 @@ const Links = (props: {
   )
 }
 
-export default Links;
+export default memo(Links);
+
+//(content.classes === props.active) ? (content.classes + ' active') :

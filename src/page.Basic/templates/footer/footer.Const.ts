@@ -1,10 +1,10 @@
-const listingDataUl = [
+const ulData = [
   {
     id: 'footer-left',
   }
-],
+];
 
-listingDataLi = [
+const liData = [
   {
     classes: 'footer-left__item0',
     title: 'СДАЁМ БАЙ',
@@ -191,4 +191,4 @@ const imgData = [
   },
 ];
 
-export { listingDataUl, listingDataLi, divData1, h4Data, linksData1, divData2, linksData2, imgData }
+export { ulData, liData, divData1, h4Data, linksData1, divData2, linksData2, imgData }
