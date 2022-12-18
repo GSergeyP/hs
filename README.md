@@ -11,3 +11,5 @@
 # task10 - React. Context. Стили. 
 # task11 - React. Redux. React-Hook-Form. Стили. 
 # task12 - React. Memo. Suspense.
+# task13 - Повторение практики по Next.js
+# task14 - Повторение практики по PropTypes
